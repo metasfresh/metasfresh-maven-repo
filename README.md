@@ -1,10 +1,11 @@
 # metasfresh-maven-repo
-Hosts a maven repository for some legacy jars which are no longer available on public maven repositories
+Hosts a maven repository for some legacy jars which are no longer available on public maven repositories.
+This repo is also referenced from the metasfresh-parent pom
 
 ## Important:
-* we are in the process of setting up a public maven repo for metasfresh.
-* I just imported the artifacts there. If anyone adds another artifact here, please make sure to also add it to the newe repo (or ask [metas-ts](https://github.com/orgs/metasfresh/people/metas-ts))
-* if the new nexus is ready, we will update the metasfresh-parent pom and remove this repo
+* We are in the process of setting up a public maven repo for metasfresh.
+* I just imported the artifacts that are hosted here to that new repo. If anyone adds another artifact here, please make sure to also add it to the new repo (or ask [metas-ts](https://github.com/orgs/metasfresh/people/metas-ts))
+* if the new nexus server is ready, we will update the metasfresh-parent pom and remove this repo
 
 ## Install a new artifact
 
