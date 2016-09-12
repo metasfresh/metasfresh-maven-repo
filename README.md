@@ -1,6 +1,11 @@
 # metasfresh-maven-repo
 Hosts a maven repository for some legacy jars which are no longer available on public maven repositories
 
+## Important:
+* we are in the process of setting up a public maven repo for metasfresh.
+* I just imported the artifacts there. If anyone adds another artifact here, please make sure to also add it to the newe repo (or ask [metas-ts](https://github.com/orgs/metasfresh/people/metas-ts))
+* if the new nexus is ready, we will update the metasfresh-parent pom and remove this repo
+
 ## Install a new artifact
 
 ```
@@ -8,7 +13,7 @@ mvn -DlocalRepositoryPath=/path/to/repository_folder install:install-file -Dfile
 ```
 
 ## Current artifacts and the reason why we have them here
-* jms-1.1.jar - link broken on maven central: http://central.maven.org/maven2/javax/jms/jms/1.1/jms-1.1.jar
+* jms-1.1.jar - the jar itself in not available on maven-ventral: http://central.maven.org/maven2/javax/jms/jms/1.1/
 * ftp4che-0.7.1.jar - not available in maven central but available on http://repo.pentaho.org/content/groups/omni/ftp4che/ftp4che/0.7.1/
 * pdf-renderer-0.9.0.jar - not available in maven central but available on https://java.net/projects/pdf-renderer/downloads
 * jpedal-1.0.jar - not available on maven central
