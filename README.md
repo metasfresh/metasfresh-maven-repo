@@ -1,11 +1,15 @@
+
+# DEPRECATED
+
+Please don't use this ad-hoc repository anymore. Instead, feel free to use our public maven repository at  https://repo.metasfresh.com/content/groups/mvn-public/.
+
+Note that the new repository is also wired into our [metasfresh-parent](https://github.com/metasfresh/metasfresh-parent) `pom.xml`, so in most cases, you don't need to change anything. 
+
+sidenote: to find out how to build metasfresh for yourself, you can take a look at our [developer documentation](http://docs.metasfresh.org/pages/developers/index_en).
+
 # metasfresh-maven-repo
 Hosts a maven repository for some legacy jars which are no longer available on public maven repositories.
 This repo is also referenced from the metasfresh-parent pom
-
-## Important:
-* We are in the process of setting up a public maven repo for metasfresh.
-* I just imported the artifacts that are hosted here to that new repo. If anyone adds another artifact here, please make sure to also add it to the new repo (or ask [metas-ts](https://github.com/orgs/metasfresh/people/metas-ts))
-* if the new nexus server is ready, we will update the metasfresh-parent pom and remove this repo
 
 ## Install a new artifact
 
