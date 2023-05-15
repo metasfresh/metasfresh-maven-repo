@@ -4,6 +4,6 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>de.metas.report.jasper</groupId>
-  <artifactId>dwControl-fonts</artifactId>
+  <artifactId>dwcontrol-fonts</artifactId>
   <version>1.017</version>
 </project>
