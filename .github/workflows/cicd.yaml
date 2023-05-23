@@ -16,4 +16,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for pom in repository/*.pom; do mvn -f $pom org.honton.chas:exists-maven-plugin:0.8.0:remote -DfailIfNotExists=true && echo "found $pom skipping deployment" || mvn deploy:deploy-file -Durl=https://maven.pkg.github.com/metasfresh/metasfresh-maven-repo -DrepositoryId=github -Dfile="${pom%%.pom}.jar" -DgeneratePom=false -DpomFile="$pom"; done
+          for pom in repository/*.pom; do \
+          mvn -f $pom org.honton.chas:exists-maven-plugin:0.8.0:remote -DserverId=github -Drepository=https://maven.pkg.github.com/metasfresh/metasfresh-maven-repo -DfailIfNotExists=true \
+          && echo "found $pom skipping deployment" \
+          || mvn deploy:deploy-file -Durl=https://maven.pkg.github.com/metasfresh/metasfresh-maven-repo -DrepositoryId=github -Dfile="${pom%%.pom}.jar" -DgeneratePom=false -DpomFile="$pom"\
+          ; done
