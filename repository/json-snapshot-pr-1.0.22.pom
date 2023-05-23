@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.json-snapshot</groupId>
-  <artifactId>json-snapshot-PR</artifactId>
+  <artifactId>json-snapshot-pr</artifactId>
   <version>1.0.22</version>
   <packaging>jar</packaging>
 </project>
