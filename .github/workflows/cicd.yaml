@@ -20,5 +20,5 @@ jobs:
           mvn -f $pom org.honton.chas:exists-maven-plugin:0.8.0:remote -Dexists.serverId=github -Dexists.repository=https://maven.pkg.github.com/metasfresh/metasfresh-maven-repo -DfailIfNotExists=true \
           && echo "* $pom: already present" >> $GITHUB_STEP_SUMMARY \
           || mvn deploy:deploy-file -Durl=https://maven.pkg.github.com/metasfresh/metasfresh-maven-repo -DrepositoryId=github -Dfile="${pom%%.pom}.jar" -DgeneratePom=false -DpomFile="$pom" \
-          && echo "* $pom: deployed" >> $GITHUB_STEP_SUMMARY
+          && echo "* $pom: deployed" >> $GITHUB_STEP_SUMMARY \
           ; done
