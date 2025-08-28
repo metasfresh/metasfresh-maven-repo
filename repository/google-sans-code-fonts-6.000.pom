@@ -4,6 +4,6 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>de.metas.report.jasper</groupId>
-  <artifactId>googe-sans-code-fonts</artifactId>
+  <artifactId>google-sans-code-fonts</artifactId>
   <version>6.000</version>
 </project>
